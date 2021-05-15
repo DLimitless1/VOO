@@ -32,6 +32,21 @@
             position: sticky;
             top: 0;
             padding: 5px;
+            text-decoration: none;
+            font-style: normal;
+            font-weight: normal;
+            text-transform: normal;
+            letter-spacing: 1px;
+            line-height: 1.3em;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        nav a:hover {
+            color:  rgb(247, 213, 22);
+            font-weight: bolder;
+            font-style: bolder;
+            text-transform: normal;
         }
 
         h1,
@@ -40,7 +55,6 @@
             color: rgb(6, 5, 68);
             position: center;
             padding: 15px;
-            font-size: 16;
             letter-spacing: 3px;
         }
 
@@ -61,7 +75,7 @@
         .btn {
             background-color: rgb(6, 5, 68);
             color: rgb(247, 213, 22);
-            transition-duration: 0.4s;
+            transition-duration: 0.3s;
         }
 
         .right {
@@ -74,7 +88,9 @@
 
         .button:hover {
             box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-        }
+            font-size: 20px;
+            font-weight: bolder;
+            }
 
         main {
             background-Image: url() background-repeat: no-repeat;
@@ -103,25 +119,27 @@
         <div class="col-sm"></div>
         <div class="col-sm"></div>
         <div class="col-sm"></div>
-        <div class="col-sm"></div>
-        <div class="col center">
-            <button onclick="myFunction()">Book an Appointment</button>
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#pifModal"
+            data-modal-id="pifModal">Project Information Form</button>
+
+        <button type="button" class="btn btn-secondary" onclick="myFunction()">Book an Appointment
             <script>
                 function myFunction() {
                     window.open("https://calendly.com/davina-bilow/60min");
                 }
             </script>
-        </div>
         </button>
     </div>
 </body>
+
 <header>
     <h1 class="container-fluid">
         <div class="text-center">VOO</div>
         <div>Visual Optimization & Organization</div>
     </h1>
     <div>
-        Spacial Organization is a natural gift I'd like to create an efficient and logical system to your clutter to
+        30 years of experience. Spacial Organization is a natural gift I'd like to create an efficient and logical
+        system to your clutter to
         make your world more efficient, and organized, where you know where all your belonging are, quickly, and
         logically,
         of Home and Office Spaces. Please contact us!
@@ -133,8 +151,11 @@
         <div>
             <ul class="navbar-nav">
                 <li class="nav-item"></li>
-                <a class="nav-link" href="#Home">Home</a>
-                <a class="nav-link" href="#Office">Office</a>
+                <a class="nav-link" href="file:///C:/Users/1limi/OneDrive/Documents/VOO/index.html">Approach</a>
+                <a class="nav-link" href="file:///C:/Users/1limi/OneDrive/Documents/VOO/home.html">Home</a>
+                <a class="nav-link" href="file:///C:/Users/1limi/OneDrive/Documents/VOO/office.html">Office</a>
+                <a class="nav-link" href="file:///C:/Users/1limi/OneDrive/Documents/VOO/q&a.html">Q & A</a>
+                <a class="nav-link" href="file:///C:/Users/1limi/OneDrive/Documents/VOO/aboutme.html">About Me</a>
             </ul>
         </div>
     </nav>
@@ -153,10 +174,11 @@
                     <div class="wrap">
                         <div>
                             <h2 class="text_over_image">
-                                <a href="home.html" id="home">Home</a></h2>
+                                <a href="home.html" id="home">Home</a>
+                            </h2>
                             <a href="home.html" id="home">
-                            <img src="C:/Users/1limi/OneDrive/Documents/VOO/Home/Closets/Hall_Closet.jpg" alt="home"
-                                width="300" height="300" class="rounded-circle cover" href="home.html" class="left">
+                                <img src="C:/Users/1limi/OneDrive/Documents/VOO/Home/Closets/Hall_Closet.jpg" alt="home"
+                                    width="300" height="300" class="rounded-circle cover" href="home.html" class="left">
                             </a>
                         </div>
                     </div>
@@ -165,10 +187,11 @@
                     <div class="wrap">
                         <div>
                             <h2 class="text_over_image">
-                                <a href="office.html" id="office">Office</a></h2>
+                                <a href="office.html" id="office">Office</a>
+                            </h2>
                             <a href="office.html" id="office">
-                            <img src="C:/Users/1limi/OneDrive/Documents/VOO/Office/Organizers.png" alt="office"
-                                height="300" width="300" class="rounded-circle cover" href="office.html">
+                                <img src="C:/Users/1limi/OneDrive/Documents/VOO/Office/Organizers.png" alt="office"
+                                    height="300" width="300" class="rounded-circle cover" href="office.html">
                             </a>
                         </div>
                     </div>
@@ -179,10 +202,13 @@
     <br>
     <br>
     <section>
-        <h2>Our Approach</h2>
+        <h2>My Approach</h2>
         <div class="col container-md"></div>
         <div>
-            <div class="text-top"><b>1st Step:</b> Measurements</div>
+            <div class="text-top"><b>1st Step: MEASUREMENTS</b></div>
+            Measure the space we're working with to determine appropriate organizing fixtures that may be needed and get
+            your input on your style preferences.
+            <br>
             <img src="C:/Users/1limi/OneDrive/Documents/VOO/Plan/Measurements-Garage.jpg" height="200" width="fluid"
                 alt="Garage">
             <img src="C:/Users/1limi/OneDrive/Documents/VOO/Plan/Measurements.jpg" height="200" width="fluid"
@@ -190,20 +216,27 @@
         </div>
         <br>
         <div>
-            <div class="text-top"><b>2nd Step:</b> Installation</div>
+            <div class="text-top"><b>2nd Step: ORGANIZE</b></div>
+            I'll go through and divide items in logical piles, sometimes with your guidance to see if there are items to
+            be discarded or donated. (Ask me about Free donation pick up arranggements)
+            <br>
+            <img src="C:/Users/1limi/OneDrive/Documents/VOO/Home/Garages/garage_system.jpg" height="200" width="fluid"
+                alt="Garage">
+        </div>
+        <br>
+        <div>
+            <div class="text-top"><b>3rd Step: INSTALLATION</b></div>
+            Make a trip to the store to pick up the appropriate organizational items, then install the fixtures.
+            <br>
             <img src="C:/Users/1limi/OneDrive/Documents/VOO/Plan/Garage-Install Shelving.jpg" height="200" width="fluid"
                 alt="Garage">
         </div>
         <br>
         <div>
-            <div class="text-top"><b>3rd Step:</b> Labeling</div>
+            <div class="text-top"><b>4th Step:LABLING</b></div>
+            Lable shelves and/or boxes/bins appropriately.
+            <br>
             <img src="C:/Users/1limi/OneDrive/Documents/VOO/Plan/Garage-Labeling.jpg" height="200" width="fluid"
-                alt="Garage">
-        </div>
-        <br>
-        <div>
-            <div class="text-top"><b>4th Step:</b> Organize</div>
-            <img src="C:/Users/1limi/OneDrive/Documents/VOO/Home/Garages/garage_system.jpg" height="200" width="fluid"
                 alt="Garage">
         </div>
     </section>
@@ -217,11 +250,134 @@
                 <a href="mailto:davina.bilow@zohomail.com"> Send email</a>
             </p>
             <!-- <p class="col">
-                Franchise<br>
-                Join Our Team
-            </p> -->
+            Franchise<br>
+            Join Our Team
+        </p> -->
             </div>
     </footer>
+
+    <div class="modal fade" id="pifModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <header class="modal-header">
+                    <h4 class="modal-title">Project Information Form</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </header>
+
+                <form class="modal-body">
+                    <fieldset>
+                        <form action="#">
+
+                            <p class="form-group">
+                                <label for="planning process" required>Where are you in the planning process?</label>
+                                <br>
+                                <input type="radio" id="ready" name="planningProcess" value="ready">
+                                <label for="ready">I'm ready to hire</label><br>
+                                <input type="radio" id="planning" name="planningProcess" value="planning">
+                                <label for="planning">I'm still planning</label><br>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="completion" required>What is your time frame for completion? </label>
+                                <br>
+                                <input type="radio" id="ready" name="completion" value="flexibley">
+                                <label for="flexible">I'm flexible</label><br>
+                                <input type="radio" id="planning" name="completion" value="week">
+                                <label for="week">Within a week</label><br>
+                                <input type="radio" id="ready" name="completion" value="1to2">
+                                <label for="1to2">1 to 2 weeks</label><br>
+                                <input type="radio" id="planning" name="completion" value="+2">
+                                <label for="+2">+2 weeks</label><br>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="location" required>Is this a residential or commercial location?</label>
+                                <br>
+                                <input type="radio" id="Residential" name="location" value="Residential">
+                                <label for="Residential">Residential (home)</label><br>
+                                <input type="radio" id="Business" name="location" value="Business">
+                                <label for="Business">Business</label><br>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="areas" required>What areas need organizing?</label>
+                                <br>
+                                <input type="checkbox" id="Kitchen" name="areas" value="Kitchen">
+                                <label for="Kitchen">Kitchen and cabinets</label><br>
+                                <input type="checkbox" id="Closets" name="areas" value="Closets">
+                                <label for="Closets">Closets</label><br>
+                                <input type="checkbox" id="Closets" name="areas" value="Garage">
+                                <label for="Garage">Garage</label><br>
+                                <input type="checkbox" id="Office" name="areas" value="Office">
+                                <label for="Office">In-home office</label><br>
+                                <input type="checkbox" id="Storage" name="areas" value="Storage">
+                                <label for="Storage">Storage area</label><br>
+                                <input type="checkbox" id="House" name="areas" value="House">
+                                <label for="House">Whole house</label><br>
+                                <input type="checkbox" id="Other" name="areas" value="Other">
+                                <label for="Other">Other</label><br>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="description">Please provide a short description of your project</label>
+                                <textarea rows="4" cols="20" wrap="hard" type="text" class="form-control"
+                                    placeholder="Enter Description" id="description"></textarea>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="fname" required>First name:</label><br>
+                                <input type="text" class="form-control" id="fname" name="fname"><br>
+                                <label for="lname" required>Last name:</label><br>
+                                <input type="text" class="form-control" id="lname" name="lname">
+                            </p>
+
+                            <p class="form-group">
+                                <label for="Phone Number">Phone Number:</label>
+                                <input type="tel" class="form-control" id="phone" name="phone"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]4}" required>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="address">Address (where the work will be performed):</label>
+                                <input type="text" class="form-control" id="address" name="address" required>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="City">City:</label>
+                                <input type="text" class="form-control" id="City" name="city" required>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="zipcode">Zip/postal code:</label>
+                                <input type="text" inputmode="numeric" class="form-control" id="zipcode" name="zipcode"
+                                    pattern="[0-9]{5}" required>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="description">Please provide additional gate code access and parking
+                                    information.</label>
+                                <textarea rows="2" cols="20" wrap="hard" type="text" class="form-control"
+                                    placeholder="Enter Description" id="description"></textarea>
+                            </p>
+
+
+                    </fieldset>
+                    <button type="Submit" class="btn btn-primary">Submit</button>
+                </form>
+                </p>
+                <!-- Modal footer -->
+                <p class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </p>
+            </div>
+        </div>
 </main>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

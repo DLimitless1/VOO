@@ -34,7 +34,9 @@
             padding: 5px;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             font-family: Lobster;
             color: rgb(6, 5, 68);
             position: center;
@@ -98,19 +100,19 @@
         }
     </style>
 
-     <div class="row container-fluid">
+    <div class="row container-fluid">
         <div class="col-sm"></div>
         <div class="col-sm"></div>
         <div class="col-sm"></div>
-        <div class="col-sm"></div>
-            <div class="col center">
-                <button onclick="myFunction()">Book an Appointment</button>
-                <script>
-                    function myFunction() {
-                        window.open("https://calendly.com/davina-bilow/60min");
-                    }
-                </script>
-            </div>
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#pifModal"
+            data-modal-id="pifModal">Project Information Form</button>
+
+        <button type="button" class="btn btn-secondary" onclick="myFunction()">Book an Appointment
+            <script>
+                function myFunction() {
+                    window.open("https://calendly.com/davina-bilow/60min");
+                }
+            </script>
         </button>
     </div>
 </body>
@@ -118,7 +120,8 @@
 <header>
     <h1 class="container-fluid">
         <div class="text-center">VOO</div>
-    <div>Visual Optimization & Organization</div></h1>
+        <div>Visual Optimization & Organization</div>
+    </h1>
 </header>
 
 <main>
@@ -126,8 +129,11 @@
         <div>
             <ul class="navbar-nav">
                 <li class="nav-item"></li>
+                <a class="nav-link" href="file:///C:/Users/1limi/OneDrive/Documents/VOO/index.html">Approach</a>
                 <a class="nav-link" href="file:///C:/Users/1limi/OneDrive/Documents/VOO/home.html">Home</a>
                 <a class="nav-link" href="file:///C:/Users/1limi/OneDrive/Documents/VOO/office.html">Office</a>
+                <a class="nav-link" href="file:///C:/Users/1limi/OneDrive/Documents/VOO/q&a.html">Q & A</a>
+                <a class="nav-link" href="file:///C:/Users/1limi/OneDrive/Documents/VOO/aboutme.html">About Me</a>
             </ul>
         </div>
     </nav>
@@ -183,6 +189,129 @@
             </p> -->
             </p>
     </footer>
+
+    <div class="modal fade" id="pifModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <header class="modal-header">
+                    <h4 class="modal-title">Project Information Form</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </header>
+
+                <form class="modal-body">
+                    <fieldset>
+                        <form action="#">
+
+                            <p class="form-group">
+                                <label for="planning process" required>Where are you in the planning process?</label>
+                                <br>
+                                <input type="radio" id="ready" name="planningProcess" value="ready">
+                                <label for="ready">I'm ready to hire</label><br>
+                                <input type="radio" id="planning" name="planningProcess" value="planning">
+                                <label for="planning">I'm still planning</label><br>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="completion" required>What is your time frame for completion? </label>
+                                <br>
+                                <input type="radio" id="ready" name="completion" value="flexibley">
+                                <label for="flexible">I'm flexible</label><br>
+                                <input type="radio" id="planning" name="completion" value="week">
+                                <label for="week">Within a week</label><br>
+                                <input type="radio" id="ready" name="completion" value="1to2">
+                                <label for="1to2">1 to 2 weeks</label><br>
+                                <input type="radio" id="planning" name="completion" value="+2">
+                                <label for="+2">+2 weeks</label><br>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="location" required>Is this a residential or commercial location?</label>
+                                <br>
+                                <input type="radio" id="Residential" name="location" value="Residential">
+                                <label for="Residential">Residential (home)</label><br>
+                                <input type="radio" id="Business" name="location" value="Business">
+                                <label for="Business">Business</label><br>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="areas" required>What areas need organizing?</label>
+                                <br>
+                                <input type="checkbox" id="Kitchen" name="areas" value="Kitchen">
+                                <label for="Kitchen">Kitchen and cabinets</label><br>
+                                <input type="checkbox" id="Closets" name="areas" value="Closets">
+                                <label for="Closets">Closets</label><br>
+                                <input type="checkbox" id="Closets" name="areas" value="Garage">
+                                <label for="Garage">Garage</label><br>
+                                <input type="checkbox" id="Office" name="areas" value="Office">
+                                <label for="Office">In-home office</label><br>
+                                <input type="checkbox" id="Storage" name="areas" value="Storage">
+                                <label for="Storage">Storage area</label><br>
+                                <input type="checkbox" id="House" name="areas" value="House">
+                                <label for="House">Whole house</label><br>
+                                <input type="checkbox" id="Other" name="areas" value="Other">
+                                <label for="Other">Other</label><br>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="description">Please provide a short description of your project</label>
+                                <textarea rows="4" cols="20" wrap="hard" type="text" class="form-control"
+                                    placeholder="Enter Description" id="description"></textarea>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="fname" required>First name:</label><br>
+                                <input type="text" class="form-control" id="fname" name="fname"><br>
+                                <label for="lname" required>Last name:</label><br>
+                                <input type="text" class="form-control" id="lname" name="lname">
+                            </p>
+
+                            <p class="form-group">
+                                <label for="Phone Number">Phone Number:</label>
+                                <input type="tel" class="form-control" id="phone" name="phone"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]4}" required>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="address">Address (where the work will be performed):</label>
+                                <input type="text" class="form-control" id="address" name="address" required>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="City">City:</label>
+                                <input type="text" class="form-control" id="City" name="city" required>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="zipcode">Zip/postal code:</label>
+                                <input type="text" inputmode="numeric" class="form-control" id="zipcode" name="zipcode"
+                                    pattern="[0-9]{5}" required>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="description">Please provide additional gate code access and parking
+                                    information.</label>
+                                <textarea rows="2" cols="20" wrap="hard" type="text" class="form-control"
+                                    placeholder="Enter Description" id="description"></textarea>
+                            </p>
+
+
+                    </fieldset>
+                    <button type="Submit" class="btn btn-primary">Submit</button>
+                </form>
+                </p>
+                <!-- Modal footer -->
+                <p class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </p>
+            </div>
+        </div>
 </main>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
