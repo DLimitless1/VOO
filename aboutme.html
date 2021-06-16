@@ -42,6 +42,7 @@
             padding: 15px;
             font-size: 16;
             letter-spacing: 3px;
+            text-align: center;
         }
 
         p {
@@ -100,7 +101,9 @@
     </style>
 
     <div class="row container-fluid">
-        <div class="col-sm"></div>
+        <div class="col-sm">
+            <img src="Logo/Voo_logo.svg" style="float: left; alt=" logo" height="auto" width="80">
+        </div>
         <div class="col-sm"></div>
         <div class="col-sm"></div>
         <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#pifModal"
@@ -128,175 +131,169 @@
         <div>
             <ul class="navbar-nav">
                 <li class="nav-item"></li>
-                <a class="nav-link" href="file:///C:/Users/1limi/OneDrive/Documents/VOO/index.html">Approach</a>
-                <a class="nav-link" href="file:///C:/Users/1limi/OneDrive/Documents/VOO/home.html">Home</a>
-                <a class="nav-link" href="file:///C:/Users/1limi/OneDrive/Documents/VOO/office.html">Office</a>
-                <a class="nav-link" href="file:///C:/Users/1limi/OneDrive/Documents/VOO/q&a.html">Q & A</a>
-                <a class="nav-link" href="file:///C:/Users/1limi/OneDrive/Documents/VOO/aboutme.html">About Me</a>
+                <a class="nav-link" href="index.html">Approach</a>
+                <a class="nav-link" href="home.html">Home</a>
+                <a class="nav-link" href="office.html">Office</a>
+                <a class="nav-link" href="q&a.html">Q & A</a>
+                <a class="nav-link" href="aboutme.html">About Me</a>
             </ul>
         </div>
     </nav>
 
     <section>
         <h2 class="container-fluid">About Me</h2>
-        <img src="C:/Users/1limi/OneDrive/Documents/VOO/me.jpg" alt="me" height="350" width="auto"
-            class="mx-auto d-block rounded">
-            <p>32 year experience.
-                <br>4 years active duty in the US Marine Corps, passing weekly white glove
-                inspections.
-                <br>4 year Bachelors degree in a creative field, so I have an aesthetic eye, and a natural talent for visual/spatial organization. 
-                <br>Extensive professional leadership courses that address calendaring, setting alarm clocks, to stay on track and be an organized professional.
-                <br>I'm unique since I'm equally balanced between creativity, asthetics, structure, and logic.
-                <br>I have an aesthetic eye, paired with my exceptional spatial organization, makes the project impeccable.
-                <br>I have attention to detail, clearly label items logically, and unbelievable how much I can fit in small
-                spaces in an organized way.
-                <br>
-                Starting at a young age, as a child, my mom never had to tell me to clean my room, because I always kept
-                it tidy. I had a girl friend where I'd need to clean her room for us to play Barbies.
-                You'll feel great for choosing me and would want to tell all your friends and family of your experience
-                with me.
-            </p>
-        </section>
+        <img src="me.jpg" alt="me" height="350" width="auto" class="mx-auto d-block rounded">
+        <p>32 year experience.
+            <br>4 years active duty in the US Marine Corps, passing weekly white glove
+            inspections.
+            <br>4 year Bachelors degree in a creative field, so I have an aesthetic eye, and a natural talent for
+            visual/spatial organization.
+            <br>Extensive professional leadership courses that address calendaring, setting alarm clocks, to stay on
+            track and be an organized professional.
+            <br>I'm unique since I'm equally balanced between creativity, asthetics, structure, and logic.
+            <br>I have an aesthetic eye, paired with my exceptional spatial organization, makes the project impeccable.
+            <br>I have attention to detail, clearly label items logically, and unbelievable how much I can fit in small
+            spaces in an organized way.
+            <br>
+            Starting at a young age, as a child, my mom never had to tell me to clean my room, because I always kept
+            it tidy. I had a girl friend where I'd need to clean her room for us to play Barbies.
+            <br>
+            You'll feel great for choosing me and would want to tell all your friends and family of your experience
+            with me.
+        </p>
+    </section>
 
-        <footer class="container-fluid"><b>
-                <p class="row">
-                <p class="col">
-                    Contact Us: Headquaters<br>
-                    Costa Mesa, CA 92626<br>
-                    <a href="tel:+194494413484">(949)441-3484</a><br>
-                    <a href="mailto:davina.bilow@zohomail.com"> Send email</a>
+    <footer>
+        Contact Us: Headquaters<br>
+        Costa Mesa, CA 92626<br>
+        <b><a href="tel:+194494413484">Call</a></b>
+        <br>
+        <b><a href="mailto:contact@voo.guru"> Send email</a></b>
+    </footer>
+
+    <div class="modal fade" id="pifModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <header class="modal-header">
+                    <h4 class="modal-title">Project Information Form</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </header>
+
+                <form class="modal-body">
+                    <fieldset>
+                        <form action="#">
+
+                            <p class="form-group">
+                                <label for="planning process" required>Where are you in the planning
+                                    process?</label>
+                                <br>
+                                <input type="radio" id="ready" name="planningProcess" value="ready">
+                                <label for="ready">I'm ready to hire</label><br>
+                                <input type="radio" id="planning" name="planningProcess" value="planning">
+                                <label for="planning">I'm still planning</label><br>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="completion" required>What is your time frame for completion? </label>
+                                <br>
+                                <input type="radio" id="ready" name="completion" value="flexibley">
+                                <label for="flexible">I'm flexible</label><br>
+                                <input type="radio" id="planning" name="completion" value="week">
+                                <label for="week">Within a week</label><br>
+                                <input type="radio" id="ready" name="completion" value="1to2">
+                                <label for="1to2">1 to 2 weeks</label><br>
+                                <input type="radio" id="planning" name="completion" value="+2">
+                                <label for="+2">+2 weeks</label><br>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="location" required>Is this a residential or commercial location?</label>
+                                <br>
+                                <input type="radio" id="Residential" name="location" value="Residential">
+                                <label for="Residential">Residential (home)</label><br>
+                                <input type="radio" id="Business" name="location" value="Business">
+                                <label for="Business">Business</label><br>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="areas" required>What areas need organizing?</label>
+                                <br>
+                                <input type="checkbox" id="Kitchen" name="areas" value="Kitchen">
+                                <label for="Kitchen">Kitchen and cabinets</label><br>
+                                <input type="checkbox" id="Closets" name="areas" value="Closets">
+                                <label for="Closets">Closets</label><br>
+                                <input type="checkbox" id="Closets" name="areas" value="Garage">
+                                <label for="Garage">Garage</label><br>
+                                <input type="checkbox" id="Office" name="areas" value="Office">
+                                <label for="Office">In-home office</label><br>
+                                <input type="checkbox" id="Storage" name="areas" value="Storage">
+                                <label for="Storage">Storage area</label><br>
+                                <input type="checkbox" id="House" name="areas" value="House">
+                                <label for="House">Whole house</label><br>
+                                <input type="checkbox" id="Other" name="areas" value="Other">
+                                <label for="Other">Other</label><br>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="description">Please provide a short description of your project</label>
+                                <textarea rows="4" cols="20" wrap="hard" type="text" class="form-control"
+                                    placeholder="Enter Description" id="description"></textarea>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="fname" required>First name:</label><br>
+                                <input type="text" class="form-control" id="fname" name="fname"><br>
+                                <label for="lname" required>Last name:</label><br>
+                                <input type="text" class="form-control" id="lname" name="lname">
+                            </p>
+
+                            <p class="form-group">
+                                <label for="Phone Number">Phone Number:</label>
+                                <input type="tel" class="form-control" id="phone" name="phone"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]4}" required>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="address">Address (where the work will be performed):</label>
+                                <input type="text" class="form-control" id="address" name="address" required>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="City">City:</label>
+                                <input type="text" class="form-control" id="City" name="city" required>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="zipcode">Zip/postal code:</label>
+                                <input type="text" inputmode="numeric" class="form-control" id="zipcode" name="zipcode"
+                                    pattern="[0-9]{5}" required>
+                            </p>
+
+                            <p class="form-group">
+                                <label for="description">Please provide additional gate code access and parking
+                                    information.</label>
+                                <textarea rows="2" cols="20" wrap="hard" type="text" class="form-control"
+                                    placeholder="Enter Description" id="description"></textarea>
+                            </p>
+
+
+                    </fieldset>
+                    <button type="Submit" class="btn btn-primary">Submit</button>
+                </form>
                 </p>
-                <!-- <p class="col">
-            Franchise<br>
-            Join Our Team
-        </p> -->
-                </div>
-        </footer>
-
-
-        <div class="modal fade" id="pifModal">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <header class="modal-header">
-                        <h4 class="modal-title">Project Information Form</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </header>
-
-                    <form class="modal-body">
-                        <fieldset>
-                            <form action="#">
-
-                                <p class="form-group">
-                                    <label for="planning process" required>Where are you in the planning
-                                        process?</label>
-                                    <br>
-                                    <input type="radio" id="ready" name="planningProcess" value="ready">
-                                    <label for="ready">I'm ready to hire</label><br>
-                                    <input type="radio" id="planning" name="planningProcess" value="planning">
-                                    <label for="planning">I'm still planning</label><br>
-                                </p>
-
-                                <p class="form-group">
-                                    <label for="completion" required>What is your time frame for completion? </label>
-                                    <br>
-                                    <input type="radio" id="ready" name="completion" value="flexibley">
-                                    <label for="flexible">I'm flexible</label><br>
-                                    <input type="radio" id="planning" name="completion" value="week">
-                                    <label for="week">Within a week</label><br>
-                                    <input type="radio" id="ready" name="completion" value="1to2">
-                                    <label for="1to2">1 to 2 weeks</label><br>
-                                    <input type="radio" id="planning" name="completion" value="+2">
-                                    <label for="+2">+2 weeks</label><br>
-                                </p>
-
-                                <p class="form-group">
-                                    <label for="location" required>Is this a residential or commercial location?</label>
-                                    <br>
-                                    <input type="radio" id="Residential" name="location" value="Residential">
-                                    <label for="Residential">Residential (home)</label><br>
-                                    <input type="radio" id="Business" name="location" value="Business">
-                                    <label for="Business">Business</label><br>
-                                </p>
-
-                                <p class="form-group">
-                                    <label for="areas" required>What areas need organizing?</label>
-                                    <br>
-                                    <input type="checkbox" id="Kitchen" name="areas" value="Kitchen">
-                                    <label for="Kitchen">Kitchen and cabinets</label><br>
-                                    <input type="checkbox" id="Closets" name="areas" value="Closets">
-                                    <label for="Closets">Closets</label><br>
-                                    <input type="checkbox" id="Closets" name="areas" value="Garage">
-                                    <label for="Garage">Garage</label><br>
-                                    <input type="checkbox" id="Office" name="areas" value="Office">
-                                    <label for="Office">In-home office</label><br>
-                                    <input type="checkbox" id="Storage" name="areas" value="Storage">
-                                    <label for="Storage">Storage area</label><br>
-                                    <input type="checkbox" id="House" name="areas" value="House">
-                                    <label for="House">Whole house</label><br>
-                                    <input type="checkbox" id="Other" name="areas" value="Other">
-                                    <label for="Other">Other</label><br>
-                                </p>
-
-                                <p class="form-group">
-                                    <label for="description">Please provide a short description of your project</label>
-                                    <textarea rows="4" cols="20" wrap="hard" type="text" class="form-control"
-                                        placeholder="Enter Description" id="description"></textarea>
-                                </p>
-
-                                <p class="form-group">
-                                    <label for="fname" required>First name:</label><br>
-                                    <input type="text" class="form-control" id="fname" name="fname"><br>
-                                    <label for="lname" required>Last name:</label><br>
-                                    <input type="text" class="form-control" id="lname" name="lname">
-                                </p>
-
-                                <p class="form-group">
-                                    <label for="Phone Number">Phone Number:</label>
-                                    <input type="tel" class="form-control" id="phone" name="phone"
-                                        pattern="[0-9]{3}-[0-9]{3}-[0-9]4}" required>
-                                </p>
-
-                                <p class="form-group">
-                                    <label for="email">Email:</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
-                                </p>
-
-                                <p class="form-group">
-                                    <label for="address">Address (where the work will be performed):</label>
-                                    <input type="text" class="form-control" id="address" name="address" required>
-                                </p>
-
-                                <p class="form-group">
-                                    <label for="City">City:</label>
-                                    <input type="text" class="form-control" id="City" name="city" required>
-                                </p>
-
-                                <p class="form-group">
-                                    <label for="zipcode">Zip/postal code:</label>
-                                    <input type="text" inputmode="numeric" class="form-control" id="zipcode"
-                                        name="zipcode" pattern="[0-9]{5}" required>
-                                </p>
-
-                                <p class="form-group">
-                                    <label for="description">Please provide additional gate code access and parking
-                                        information.</label>
-                                    <textarea rows="2" cols="20" wrap="hard" type="text" class="form-control"
-                                        placeholder="Enter Description" id="description"></textarea>
-                                </p>
-
-
-                        </fieldset>
-                        <button type="Submit" class="btn btn-primary">Submit</button>
-                    </form>
-                    </p>
-                    <!-- Modal footer -->
-                    <p class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </p>
-                </div>
+                <!-- Modal footer -->
+                <p class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </p>
             </div>
+        </div>
 </main>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
